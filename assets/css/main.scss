@@ -39,3 +39,38 @@
 @import "vendor/font-awesome/brands";
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
+
+
+.paper-container {
+    display: flex; 
+}
+  
+.image {
+    width: 25%; 
+    margin-right: 20px; 
+}
+
+.text-content {
+    width: 100%; 
+}
+
+.paper_title{
+    // font-weight: 700;
+    font-weight: bold;
+    font-size:18px;
+    padding-bottom: 0px;
+}
+
+.paper_authors{
+    font-size:16px;
+}
+
+div.demo-video{
+    width: 140px;
+    height: 140px;
+}
+
+div.paper_venue {
+    font-size:16px;
+    font-style: italic;
+}
