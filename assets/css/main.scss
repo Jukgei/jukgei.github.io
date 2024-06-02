@@ -43,6 +43,8 @@
 
 .paper-container {
     display: flex; 
+    justify-content: center;
+    // align-items: center; 
 }
   
 .image {
@@ -58,19 +60,35 @@
     // font-weight: 700;
     font-weight: bold;
     font-size:18px;
-    padding-bottom: 0px;
+    padding-top: 0px;
+    // padding-bottom: 0px;
 }
 
 .paper_authors{
     font-size:16px;
 }
 
-div.demo-video{
-    width: 140px;
-    height: 140px;
+div.paper-teaser{
+    width: 320px;
+    height: 180px;
+    margin-right: 20px;
+    padding-top: 5px;
 }
 
 div.paper_venue {
     font-size:16px;
     font-style: italic;
 }
+
+a.paper_author {
+    font-size:16px;
+}
+
+div.paper_materials{
+	font-size:16px;
+}
+
+span.link {
+    padding-right: 10px;
+}
+
