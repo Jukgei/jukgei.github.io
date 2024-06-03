@@ -43,14 +43,14 @@
 
 .paper-container {
     display: flex; 
-    justify-content: center;
-    // align-items: center; 
+    // justify-content: center;
+    align-items: center; 
 }
   
-.image {
-    width: 25%; 
-    margin-right: 20px; 
-}
+// .image {
+//     width: 25%; 
+//     margin-right: 20px; 
+// }
 
 .text-content {
     width: 100%; 
@@ -69,11 +69,15 @@
 }
 
 div.paper-teaser{
+
     width: 320px;
     height: 180px;
     margin-right: 20px;
-    padding-top: 5px;
+    display: flex; 
+    // justify-content: center;
+    align-items: center; 
 }
+
 
 div.paper_venue {
     font-size:16px;
