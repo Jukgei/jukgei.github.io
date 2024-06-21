@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Gaussian-Informed Continuum for Physical Property Identification and Simulation.">
+  <meta name="keywords" content="3DGS, Reconstruction, System Identification, Physical Simulation">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gaussian-Informed Continuum for Physical Property Identification and Simulation</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./assets/torus.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+<body>
+
+<!-- <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+</nav> -->
+
+
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title">Gaussian-Informed Continuum for Physical Property Identification and Simulation</h1>
+          <div class="is-size-5 publication-authors">
+            <span class="author-block">
+              <a href="https://scholar.google.com/citations?hl=zh-CN&user=GeSCNR4AAAAJ">Junhao Cai</a><sup>1*</sup>,</span>
+            <span class="author-block">
+              <a href="https://jukgei.github.io">Yuji Yang</a><sup>2*</sup>,</span>
+            <span class="author-block">
+              <a href="https://weihao-yuan.com">Weihao Yuan</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://hyshkust.github.io">Yisheng He</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://scholar.google.co.uk/citations?user=GHOQKCwAAAAJ&hl=en">Zilong Dong</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://research.cs.washington.edu/istc/lfb">Liefeng Bo</a><sup>3</sup>,
+            </span>
+            <span class="author-block">
+              <a href="https://cse.sysu.edu.cn/content/2504">Hui Cheng</a><sup>2</sup>
+            </span>
+            <span class="author-block">
+              <a href="https://cqf.io">Qifeng Chen</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-authors">
+            <span class="author-block"><sup>1</sup>The Hong Kong University of Science and Technology,</span>
+            <span class="author-block"><sup>2</sup>Sun Yat-sen University,</span>
+            <span class="author-block"><sup>3</sup>Alibaba Group</span>
+            <span class="author-block"><sup>*</sup>Equal contribution, order determined by coin toss.</span>
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- PDF Link. TODO -->
+              <span class="link-block">
+                <a href="https://jukgei.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Paper</span>
+                </a>
+              </span>
+              <!-- PDF Link. TODO -->
+              <span class="link-block">
+                <a href="https://jukgei.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
+              <!-- Code Link. TODO-->
+              <span class="link-block">
+                <a href="https://jukgei.github.io"
+                   class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                      <i class="fab fa-github"></i>
+                  </span>
+                  <span>Code</span>
+                  </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <img src="assets/pipeline.png"
+                 class="interpolation-image"
+                 alt="Interpolate start reference image."/>
+      <h2 class="subtitle has-text-centered">
+      </h2>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This paper studies the problem of estimating physical properties (system identification) through visual observations. To facilitate geometry-aware guidance in physical property estimation, we introduce a novel hybrid framework that leverages 3D Gaussian representation to not only capture explicit shapes but also enable the simulated continuum to deduce implicit shapes during training.
+            We propose a new dynamic 3D Gaussian framework based on motion factorization to recover the object as 3D Gaussian point sets across different time states. 
+            Furthermore, we develop a coarse-to-fine filling strategy to generate the density fields of the object from the Gaussian reconstruction, allowing for the extraction of object continuums along with their surfaces and the integration of Gaussian attributes into these continuums. 
+            In addition to the extracted object surfaces, the Gaussian-informed continuum also enables the rendering of object masks during simulations, serving as implicit shape guidance for physical property estimation. 
+            Extensive experimental evaluations demonstrate that our pipeline achieves state-of-the-art performance across multiple benchmarks and metrics. Additionally, we illustrate the effectiveness of the proposed method through real-world demonstrations, showcasing its practical utility.
+            The code of our method will be made public.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Reconstruction & Simulatable Digital Assets
+        </h2>
+        <div class="content has-text-justified">
+          <p>
+            Not only can you reconstruct and predict, but you can also modify most of the physical parameters—such as density, gravity, and Young's modulus—to satisfy your creative needs. Some demos are shown as follows. Have fun!
+          </p>
+        </div>
+        <!-- Torus -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Torus</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/torus/torus.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Softening</div>
+              <div class="text">Rondom initial velocity</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- bird -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Bird</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/bird/bird.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Hardening</div>
+              <div class="text">Zero gravity</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- cat -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Cat</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/cat/cat.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Liquid cat</div>
+              <div class="text">Liquid cat from other view</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Playdoh -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Playdoh</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/playdoh/playdoh.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Elastic playdoh</div>
+              <div class="text">Liquid playdoh</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Trophy -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Trophy</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/trophy/trophy.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">More loose</div>
+              <div class="text">Rotation</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+        <!-- Cream -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Cream</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/cream/cream.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Liquid cream</div>
+              <div class="text">Plasticine cream</div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <!-- Toothpaste -->
+        <div class="columns is-centered has-text-centered">
+            <h2 class="title is-4">Toothpaste</h2>
+        </div>
+        <div class="content has-text-centered">
+          <video id="replay-video"
+                autoplay
+                loop
+                muted
+                preload
+                playsinline
+                width="100%">
+            <source src="./assets/toothpaste/toothpaste.mp4"
+                    type="video/mp4">
+          </video>
+          <div class="image-grid">
+            <div class="text-wrapper">
+              <div class="text">Ground truth</div>
+              <div class="text">Reconstruction and prediction</div>
+              <div class="text">Elastic toothpaste</div>
+              <div class="text">Plasticine toothpaste</div>
+            </div>
+          </div>
+        </div>
+        <br>
+
+
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <h2 class="title is-3">Digital twin 
+        </h2>
+      </div>
+    </div>
+    <div class="content has-text-justified">
+      <p>
+        Reconstruct the geometric shape and identify the physical parameters, then manipulate the object in both the virtual and real worlds, respectively.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-light is-small">
+  <div class="hero-body">
+    <div class="container">
+      <div id="results-width" class="carousel results-carousel">
+        <div class="item item-burgerrr">
+          <video poster="" id="burgerrr" autoplay controls muted loop playsinline>
+            <source src="./assets/burger/burger.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-dog">
+          <video poster="" id="dog" autoplay controls muted loop playsinline>
+            <source src="./assets/dog/dog.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+        <div class="item item-pig">
+          <video poster="" id="pig" autoplay controls muted loop playsinline>
+            <source src="./assets/pig/pig.mp4"
+                    type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@article{j2024gic,
+  author    = {Junhao Cai},
+  title     = {Gaussian-Informed Continuum for Physical Property Identification and Simulation},
+  journal   = {Arxiv},
+  year      = {2024},
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/jukgei" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+        <div class="content">
+          <p>
+            This project page is borrowed from <a
+            href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
