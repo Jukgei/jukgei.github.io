@@ -1,0 +1,76 @@
+
+- p1:
+  authors:
+    - author1:
+      name: Junhao Cai*†
+      url: https://scholar.google.com/citations?hl=zh-CN&user=GeSCNR4AAAAJ
+      highlight: False
+    - author2:
+      name: Yuji Yang*
+      url: https://jukgei.github.io
+      highlight: True 
+    - author3:
+      name: Weihao Yuan
+      url: https://weihao-yuan.com
+      highlight: False
+    - author4:
+      name: Yisheng He
+      url: https://hyshkust.github.io
+      highlight: False
+    - author5:
+      name: Zilong Dong
+      url: https://scholar.google.co.uk/citations?user=GHOQKCwAAAAJ&hl=en
+      highlight: False
+    - author6:
+      name: Liefeng Bo
+      url: https://research.cs.washington.edu/istc/lfb
+      highlight: False
+    - author7:
+      name: Hui Cheng
+      url: https://cse.sysu.edu.cn/content/2504
+      highlight: False
+    - author8:
+      name: Qifeng Chen
+      url: https://cqf.io
+      highlight: False
+  materials:
+    - m1:
+      label: "Paper"
+      url: None
+    - m2:
+      label: "Project Page"
+      url: https://jukgei.github.io/project/gic/
+    - m3:
+      label: "Code"
+      url: None
+  title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
+  venue: "Arxiv. 2024."
+  teaser: "assets/publications/gic_teaser.mp4"
+  teaser_type: "video"
+
+- p2:
+  authors:
+    - author1:
+      name: Lishan Lin
+      highlight: False
+    - author2:
+      name: Yuji Yang
+      url: https://jukgei.github.io/
+      highlight: True 
+    - author3:
+      name: Hui Cheng†
+      url: https://cse.sysu.edu.cn/content/2504
+      highlight: False
+    - author4:
+      name: Xuechen Chen
+      url: https://hyshkust.github.io/
+      highlight: False
+  materials:
+    - m1:
+      label: "Paper"
+      url: https://doi.org/10.3390/s19153410
+  title: "Autonomous Vision-Based Aerial Grasping for Rotorcraft Unmanned Aerial Vehicles"
+  venue: "Sensors"
+  teaser: "assets/publications/uav_grasp_sensors_teaser.mp4"
+  teaser_type: "video"
+
