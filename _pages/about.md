@@ -44,3 +44,28 @@ My dream is to conduct interesting and valuable research that closes the gap bet
     paper_materials=materials
    %}
 {% endfor %}
+
+## Projects ##
+
+{% assign projects = site.data.projects %}
+{% for proj in projects %}
+  
+  {% assign materials = proj["materials"] %}
+  {% assign title = proj["title"] %}
+  {% assign description = proj["description"] %}
+  {% assign code_url = proj["code_url"]%}
+  {% if proj.teaser %}
+    {% assign project_teaser = proj["teaser"] %}
+    {% assign project_teaser_type = proj["teaser_type"] %}
+  {% else %}
+    {% assign project_teaser = "assets/images/default_teaser320x180.png" %}
+    {% assign project_teaser_type = "img" %}
+  {% endif %}
+  {% include project_row.html 
+    teaser=project_teaser
+    teaser_type=project_teaser_type
+    project_title=title
+    project_description=description
+    project_code_url=code_url
+   %}
+{% endfor %}

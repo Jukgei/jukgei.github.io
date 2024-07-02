@@ -41,12 +41,46 @@
 @import "print";
 
 
+.project-container {
+    display: flex; 
+    // justify-content: center;
+    align-items: center; 
+}
+
+div.project-teaser{
+    width: 320px;
+    height: 180px;
+    margin-right: 20px;
+    display: flex; 
+    // justify-content: center;
+    align-items: center; 
+}
+
+.project-text-content {
+    width: 100%; 
+    align-self: flex-start;
+    margin-top: 25px;
+}
+
+.project_title{
+    // font-weight: 700;
+    font-weight: bold;
+    font-size:18px;
+    // padding-top: 0px;
+    margin-top: 0px;
+    // padding-bottom: 0px;
+}
+
+.project_description{
+    font-size:16px;
+}
+
 .paper-container {
     display: flex; 
     // justify-content: center;
     align-items: center; 
 }
-  
+// align-items: flex-start;
 // .image {
 //     width: 25%; 
 //     margin-right: 20px; 

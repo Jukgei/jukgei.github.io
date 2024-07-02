@@ -1,0 +1,13 @@
+- p1:
+  title: 'Elasticity Simulation'
+  description: "A Finite Element Method (FEM) implemented in Taichi Lang that supports both 2D and 3D simulations. The FEM implementation includes support for both explicit and implicit integer methods. Have fun!"
+  teaser: "assets/projects/fem_demo.mp4"
+  teaser_type: "video"
+  code_url: "https://github.com/Jukgei/Finite-Element-Method"
+
+- p2:
+  title: 'Fluid Simulation'
+  description: "Implemented multiple fluid simulators (WCSPH, IISPH, etc.), as well as one-way and two-way fluid-solid coupling."
+  teaser: "assets/projects/sph_demo.mp4"
+  teaser_type: "video"
+  code_url: "https://github.com/Jukgei/CFD_Taichi"
