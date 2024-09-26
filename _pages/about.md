@@ -35,6 +35,19 @@ My dream is to conduct interesting and valuable research that closes the gap bet
     {% assign paper_teaser = "assets/images/default_teaser320x180.png" %}
     {% assign paper_teaser_type = "img" %}
   {% endif %}
+
+  {% if paper.honor %}
+    {% assign paper_honor = paper["honor"] %}
+  {% else %}
+    {% assign paper_honor = "None" %}
+  {% endif %}
+
+  {% if paper.remark %}
+    {% assign paper_remark = paper["remark"] %}
+  {% else %}
+    {% assign paper_remark = "None" %}
+  {% endif %}
+
   {% include paper_row.html 
     teaser=paper_teaser
     teaser_type=paper_teaser_type
@@ -42,6 +55,8 @@ My dream is to conduct interesting and valuable research that closes the gap bet
     paper_authors=authors
     paper_venue=venue
     paper_materials=materials
+    honor=paper_honor
+    remark=paper_remark
    %}
 {% endfor %}
 

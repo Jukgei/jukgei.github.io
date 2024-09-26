@@ -44,7 +44,9 @@
       label: "Code"
       url: None
   title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
-  venue: "Neural Information Processing Systems (NeurIPS). 2024 (Oral)"
+  remark: "*Equal contribution, order determined by coin toss."
+  honor: Oral
+  venue: "Neural Information Processing Systems (NeurIPS). 2024."
   teaser: "assets/publications/gic_teaser.mp4"
   teaser_type: "video"
 

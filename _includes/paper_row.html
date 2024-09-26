@@ -28,6 +28,17 @@
               </a>{% if forloop.last == false %}, {% endif %}
             {% endfor %}
         </div>
+        {% if include.remark != "None" %}
+          <div class="paper_remark">
+            {{ include.remark }}
+          </div>
+        {% endif %}
+
+        {% if include.honor != "None" %}
+          <div class="paper_honor">
+            <i class="fas fa-award" style="color:red;vertical-align: middle;"></i> {{ include.honor }} <i class="fas fa-award" style="color:red;vertical-align: middle;"></i>
+          </div>
+        {% endif %}
 
         <div class="paper_venue">
             {{ include.paper_venue }}
