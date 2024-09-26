@@ -3,7 +3,7 @@
   authors:
     - author1:
       name: Junhao Cai*†
-      url: https://scholar.google.com/citations?hl=zh-CN&user=GeSCNR4AAAAJ
+      url: https://caijunhao.github.io/
       highlight: False
     - author2:
       name: Yuji Yang*
@@ -44,7 +44,7 @@
       label: "Code"
       url: None
   title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
-  venue: "Arxiv. 2024."
+  venue: "Neural Information Processing Systems (NeurIPS). 2024 (Oral)"
   teaser: "assets/publications/gic_teaser.mp4"
   teaser_type: "video"
 
