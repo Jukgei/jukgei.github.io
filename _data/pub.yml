@@ -2,7 +2,7 @@
 - p1:
   authors:
     - author1:
-      name: Junhao Cai*†
+      name: Junhao Cai*
       url: https://caijunhao.github.io/
       highlight: False
     - author2:
@@ -10,7 +10,7 @@
       url: https://jukgei.github.io
       highlight: True 
     - author3:
-      name: Weihao Yuan
+      name: Weihao Yuan†
       url: https://weihao-yuan.com
       highlight: False
     - author4:
