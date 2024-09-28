@@ -16,7 +16,7 @@ Hi! I am a passionate and self-motivated researcher. Currently, I am working as 
 
 My dream is to conduct interesting and valuable research that closes the gap between virtual reality and physical reality.
 
-<font color="red"><b>I am currently seeking research assistant or Ph.D. opportunities for the 2024/2025 academic year.</b></font>
+<font color="red"><b>I am currently seeking research assistant or Ph.D. opportunities for the 2025 academic year.</b></font>
 
 ## Publications ##
 ***Equal contribution †Corresponding author**
