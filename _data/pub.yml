@@ -42,7 +42,7 @@
       url: https://jukgei.github.io/project/gic/
     - m3:
       label: "Code"
-      url: None
+      url: https://github.com/Jukgei/gic
   title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
   remark: "*Equal contribution, order determined by coin toss."
   honor: Oral
