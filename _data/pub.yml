@@ -45,7 +45,7 @@
       url: https://github.com/Jukgei/gic
   title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
   remark: "*Equal contribution, order determined by coin toss."
-  honor: Oral
+  honor: Oral(0.46%)
   venue: "Neural Information Processing Systems (NeurIPS). 2024."
   teaser: "assets/publications/gic_teaser.mp4"
   teaser_type: "video"
