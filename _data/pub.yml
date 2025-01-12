@@ -36,13 +36,16 @@
   materials:
     - m1:
       label: "Paper"
-      url: None
+      url: https://arxiv.org/pdf/2406.14927
     - m2:
       label: "Project Page"
       url: https://jukgei.github.io/project/gic/
     - m3:
       label: "Code"
       url: https://github.com/Jukgei/gic
+    - m4:
+      label: "Video"
+      url: https://www.youtube.com/watch?si=uGXpEe35DqCfg3_w&v=xxCsrpmJVgs&feature=youtu.be
   title: "Gaussian-Informed Continuum for Physical Property Identification and Simulation"
   remark: "*Equal contribution, order determined by coin toss."
   honor: Oral(0.46%)
