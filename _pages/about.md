@@ -7,16 +7,17 @@ redirect_from:
   - /about.html
 ---
 
-Hi! I am a passionate and self-motivated researcher. Currently, I am working as a research assistant at the [RAPID Lab](http://lab.sysu-robotics.com) of [Sun Yat-sen University](https://www.sysu.edu.cn/). Previously, I was a game developer at [NetEase Games](https://www.neteasegames.com). I received my master degree at Sun Yat-sen University, advised by Prof. [Hui Cheng](https://cse.sysu.edu.cn/content/2504).
+Hi! I am an independent researcher and game engine engineer. Currently, I am working as an Engine Engineer at [SGRA-Studio](https://sgrastudio.com/), Tencent, focusing on real-time physics simulation and engine-level development. Previously, I worked as a Research Assistant at the [RAPID Lab](http://lab.sysu-robotics.com), [Sun Yat-sen University](https://www.sysu.edu.cn/), and as a Game Developer at [NetEase Games](https://www.neteasegames.com). I received my Master's degree from Sun Yat-sen University, advised by Prof. [Hui Cheng](https://cse.sysu.edu.cn/content/2504).
 
 ### Interests
+- Real-time physics simulation
 - 3D Reconstruction
 - (Differentiable) Physical Simulation
 - Sim-to-Real (Robotics)
 
 My dream is to conduct interesting and valuable research that closes the gap between virtual reality and physical reality.
 
-<font color="red"><b>I am currently seeking research assistant or Ph.D. opportunities for the 2025 academic year.</b></font>
+<!-- <font color="red"><b>I am currently seeking research assistant or Ph.D. opportunities for the 2025 academic year.</b></font> -->
 
 ## Publications ##
 ***Equal contribution †Corresponding author**
